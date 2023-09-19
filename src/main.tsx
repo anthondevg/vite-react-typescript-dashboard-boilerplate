@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./error-page.tsx";
 import Profile from "./dashboard/profile/Profile.tsx";
 import ShoppingCart from "./dashboard/cart/ShoppingCart.tsx";
+import Home from "./Home.tsx";
+import Login from "./auth/login/Login.tsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
         element: <ShoppingCart />,
       },
     ],
+  },
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")!).render(

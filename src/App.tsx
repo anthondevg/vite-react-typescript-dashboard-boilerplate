@@ -10,7 +10,6 @@ function App() {
         <Sidebar />
         <main className="pb-12 md:ml-64">
           <Navbar />
-
           <Outlet />
         </main>
       </div>
